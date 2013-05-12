@@ -28,11 +28,9 @@
         <%= render 'layouts/navigation' %>
         <%= render 'layouts/messages' %>
       </header>
-	<div class="row">
-      <div id="main" class="small-6 small-centered columns" role="main">
+      <div id="main" role="main">
         <%= yield %>
       </div>
-	</div>
       <footer>
       </footer>
     </div> <!--! end of #container -->
