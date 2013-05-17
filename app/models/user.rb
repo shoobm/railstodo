@@ -1,7 +1,7 @@
 class User
   include Mongoid::Document
   include Mongoid::Timestamps
-	 has_many :todos
+	 
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
@@ -48,4 +48,5 @@ class User
   field :name, :type => String
   validates_presence_of :name
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :created_at, :updated_at
+  has_many :todos
 end
