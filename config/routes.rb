@@ -1,4 +1,7 @@
 Railstodo::Application.routes.draw do
+  resources :posts
+
+
   resources :todos
 
 
